@@ -16,6 +16,12 @@ The Henry Draper Catalogue provides stellar identifiers and spectral classificat
 - Filter stars according to their relative parallax uncertainty.
 - Plot a Gaia colour–magnitude diagram using BP–RP colour and absolute G magnitude.
 
+## Dataset
+
+The dataset used in this project was obtained from a cross-match between the Henry Draper Catalogue and Gaia DR3.
+
+The original dataset contains approximately 119 MB of data. To keep the repository lightweight, a representative sample of 5,000 rows is provided in the `data/` directory for testing and reproducing the analysis workflow. The full dataset is not included.
+
 ## Methodology
 
 ### Data Cleaning
@@ -49,11 +55,15 @@ The diagram was constructed using:
 
 The magnitude axis is inverted, following the conventional representation of stellar colour–magnitude diagrams.
 
+
 ## Results
 
-The relative parallax uncertainty filter produces a cleaner colour–magnitude distribution, making the main stellar sequence more distinguishable.
+The colour–magnitude diagram was generated using the full cross-matched dataset after applying a relative parallax uncertainty threshold of 20%.
+
+The filtering improves the visibility of the stellar distribution, making the main sequence more distinguishable.
 
 ![Gaia Colour-Magnitude Diagram](gaia_hd.png)
+
 
 ## Tools
 
