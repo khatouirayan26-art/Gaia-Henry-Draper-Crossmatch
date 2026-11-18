@@ -51,7 +51,7 @@ print(df[['BP-RP', 'absmag', 'Gmag', 'Plx','e_Plx', 'rel_plx_error']].describe()
 # --- HR Diagram ---
 
 plt.figure(figsize=(8, 10))
-plt.scatter(df['BP-RP'],df['absmag'],s=4,alpha=0.4)
+plt.scatter(df['BP-RP'],df['absmag'],s=5,alpha=0.45)
 plt.gca().invert_yaxis()
 plt.xlabel('BP - RP (color index)')
 plt.ylabel('Absolute magnitude')
