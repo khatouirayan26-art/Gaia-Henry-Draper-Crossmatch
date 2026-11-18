@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # --- Load ---
 
-df = pd.read_csv('data/1790612850920A.csv')
+df = pd.read_csv('data/gaia_hd_sample.csv')
 print("Original number of stars:", len(df))
 
 
